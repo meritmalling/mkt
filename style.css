@@ -1,5 +1,5 @@
 body{
-  color:#C28C57;
+  color: #C28C57;
   font-family: 'Raleway', sans-serif;
 
   -webkit-touch-callout: none;
@@ -46,7 +46,6 @@ body{
   margin: 0 auto;
   margin-bottom: -6px;
 }
-
 #bottom h1{
   font-family: 'Old Standard TT', serif;
   font-variant: small-caps;
@@ -76,9 +75,35 @@ padding: 10px;
 }
 .work{
   margin: 0 auto;
-  padding: 75px;
+  padding-top: 75px;
   text-align: center;
 }
-li{
-  list-style: none;
+.show{
+  display: inline-block;
+}
+.hide{
+  display: none;
+}
+a{
+  text-align: center;
+  color: inherit;
+  display: inline-block;
+}
+#controls{
+  width: 50px;
+  margin: 0 auto;
+}
+a:first-child{
+  margin-right: 20px;
+}
+a:link{
+  color: inherit;
+}
+a:hover{
+  color: inherit;
+}
+img{
+  margin: 0 auto;
+  height: 200px;
+  width: 335px;
 }

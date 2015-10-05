@@ -1,22 +1,47 @@
-document.addEventListener('DOMContentLoaded', function(){
+$(document).ready(function(){
     console.log('Running')
 
-    var HTML = document.querySelector('html');
-    var count = 0;
+    var count = 1;
 
-    HTML.addEventListener('click', function(){
+    $('html').on('click', function(){
         count ++;
         if (count % 2 == 0){
-            HTML.classList.add('gray');
+            $('html').addClass('gray')
         } else {
-            HTML.classList.remove('gray');
+            $('html').removeClass('gray')
         };
     });
 
-});
+    $('#next').on('click', function(event){
 
-$(function() {
-    $('.jcarousel').jcarousel({
-        animation: 'slow'
+        event.preventDefault();
+
+        var currentImage = $('.show');
+        var nextImage = currentImage.next();
+
+        if (nextImage.length === 0){
+            nextImage = $('.work img').first()
+        }
+
+        currentImage.removeClass('show').addClass('hide').css('z-index', -10)
+        nextImage.addClass('show').removeClass('hide').css('z-index', 20);
+        $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
+    });
+
+
+    $('#previous').on('click', function(event){
+
+        event.preventDefault();
+
+        var currentImage = $('.show');
+        var nextImage = currentImage.prev();
+
+        if (nextImage.length === 0){
+            nextImage = $('.work img').last()
+        }
+
+        currentImage.removeClass('show').addClass('hide').css('z-index', -10)
+        nextImage.addClass('show').removeClass('hide').css('z-index', 20);
+        $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
     });
 });
