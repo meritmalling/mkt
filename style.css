@@ -13,6 +13,7 @@ body{
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
+/*  background-color: #171717;*/
 }
 #wrapper{
   height: 700px;
@@ -21,13 +22,8 @@ body{
 #top{
   background-color: #FAC6BF;
   width: 100%;
-  height: 225px;
+  height: 175px;
   position: relative;
-}
-#bottom{
-  background-color: #0A2531;
-  width: 100%;
-  height: 475px;
 }
 #top h1{
   width: 375px;
@@ -45,6 +41,10 @@ body{
   bottom: 0;
   margin: 0 auto;
   margin-bottom: -6px;
+}
+#bottom{
+  background-color: #0A2531;
+  height: 600px;
 }
 #bottom h1{
   font-family: 'Old Standard TT', serif;
@@ -64,18 +64,18 @@ body{
   right: 0;
   margin: 0 auto;
 }
-#contact{
-  margin: 0 auto;
-  padding: 15px;
-  text-align: center;
-}
+/*#contact{
+  position: relative;
+  bottom: -20;
+  left: 0;
+  right: 0;
+}*/
 #contact h2{
 display: inline;
 padding: 10px;
 }
 .work{
   margin: 0 auto;
-  padding-top: 75px;
   text-align: center;
 }
 .show{
@@ -83,6 +83,9 @@ padding: 10px;
 }
 .hide{
   display: none;
+}
+#previous{
+  margin-right: 20px;
 }
 a{
   text-align: center;
@@ -92,9 +95,7 @@ a{
 #controls{
   width: 50px;
   margin: 0 auto;
-}
-a:first-child{
-  margin-right: 20px;
+  padding-bottom: 20px;
 }
 a:link{
   color: inherit;
@@ -104,6 +105,91 @@ a:hover{
 }
 img{
   margin: 0 auto;
-  height: 200px;
-  width: 335px;
+  height: 300px;
+  width: 475px;
+  border-radius: 2%;
+}
+.inline{
+  padding-top: 35px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inline h2{
+  display: inline;
+  /*font-weight: 900;*/
+}
+
+#contact h6{
+  padding-top: 15px;
+}
+.about{
+/*  font-family: 'Old Standard TT', serif;*/
+  font-variant: small-caps;
+}
+.inner{
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tagShow{
+  display: inline;
+}
+.tagHide{
+  display: none;
+}
+.showImg{
+  display: inline;
+}
+.hideImg{
+  display: none;
+}
+.tag{
+  height: 25px;
+  width: 200px;
+}
+#photo{
+  border-radius: 6%;
+  width: 125px;
+  height: 125px;
+}
+.space{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+li{
+  list-style: none;
+}
+.smallCaps{
+  font-variant: small-caps;
+}
+.inline p{
+  display: inline;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.wrapper{
+  width: 65%;
+  margin: 0 auto;
+}
+.row{
+  margin-bottom: 100px;
+}
+.imgL{
+  float: left;
+}
+.imgR{
+  float: right;
+}
+.wrapper .fa{
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 200%;
+}
+embed{
+  padding-bottom: 40px;
 }

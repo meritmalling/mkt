@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="jcarousel.js"></script>
+  <script src="lettering.js"></script>
+  <script src="textillate.js"></script>
   <script src="script.js"></script>
 
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+  <link href="animate.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,32 +23,112 @@
 <body>
   <div id='wrapper'>
     <div id='top'>
-      <h1>MERIT TROMPETER</h1>
+      <div class='inline'>
+        <h2 id='about'>ABOUT</h2>
+        <h2 class='space'>|</h2>
+        <h2 id='portfolio'>WORK</h2>
+        <h2 class='space'>|</h2>
+        <h2 id='resume'>RESUME</h2>
+      </div>
+      <h1 id='home'>MERIT TROMPETER</h1>
     </div>
+
     <div id='bottom'>
 
-      <h1>Full Stack Web Developer</h1>
+      <div class='tag'>
+        <h1 class="tlt">
+          <ul class="texts">
+              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Full Stack Web Developer</li>
+              <li data-in-effect="flipInX" data-out-effect="fadeOut" data-out-shuffle="true">Data Lover</li>
+              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Hobbyist Beekeeper</li>
+              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Full Stack Web Developer</li>
+          </ul>
+        </h1>
+      </div>
 
-        <div class='work'>
-            <img class='show carousel' src='images/sudoku.png'>
-            <img class='hide carousel' src='images/quickipedia.png'>
-            <img class='hide carousel' src='images/myhive.png'>
-            <img class='hide carousel' src='images/mesa.png'>
-            <img class='hide carousel' src='images/thechase.png'>
+      <div class='inner'>
+
+      <div class='resume hide'>
+        <embed src="images/resume.pdf" width="700px" height="900px">
+        <!-- <div class='work'>
+            <img class='showImg carousel' src='images/sudoku.png'>
+            <img class='hideImg carousel' src='images/quickipedia.png'>
+            <img class='hideImg carousel' src='images/myhive.png'>
+            <img class='hideImg carousel' src='images/mesa.png'>
+            <img class='hideImg carousel' src='images/thechase.png'>
         </div>
-
         <div id='controls'>
           <a href='#' id='previous'><h2><i class="fa fa-caret-left"></i></h2></a>
           <a href='#' id='next'><h2><i class="fa fa-caret-right"></i></h2></a>
-        </div>
-
-      <div id='contact'>
-        <h2><i class="fa fa-github-square"></i></h2>
-        <h2><i class="fa fa-linkedin-square"></i></h2>
-        <h2><i class="fa fa-send"></i></h2>
-        <h2><i class="fa fa-file-text-o"></i></h2>
+        </div> -->
       </div>
 
+        <div class='about hide'>
+        <img id='photo' src='https://avatars2.githubusercontent.com/u/11151764?v=3&s=460'>
+        <h4>hi i'm merit, a full stack web developer based in seattle, wa. </h4>
+        <p>a year ago...</p>
+        <p></p>
+        <p></p>
+        </div>
+
+        <div class='portfolio hide'>
+        <div class='wrapper'>
+          <div class='row'>
+            <div class='left'>
+              <h2 class='smallCaps'>Collaborative Sudoku</h2>
+              <p class='smallCaps'>Technologies: Sails, Angular.js, Angular Material</p>
+              <a target="_blank" href='http://collaborativesudoku.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+              <a target="_blank" href='https://github.com/merittrompeter/sudoku'><i class="fa fa-github-square"></i></a>
+            </div>
+            <img class='imgR' src='images/sudoku.png'>
+          </div>
+          <div class='row'>
+            <div class='right'>
+              <h2 class='smallCaps'>Quickipedia</h2>
+              <p class='smallCaps'>Technologies: Flask, React</p>
+              <a target="_blank" href='http://quickipedia.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+              <a target="_blank" href='https://github.com/merittrompeter/quickipedia'><i class="fa fa-github-square"></i></a>
+            </div>
+            <img class='imgL' src='images/quickipedia.png'>
+          </div>
+          <div class='row'>
+            <div class='left'>
+              <h2 class='smallCaps'>MyHive</h2>
+              <p class='smallCaps'>Technologies: Ruby on Rails, Materialize</p>
+              <a target="_blank" href='http://myhive.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+              <a target="_blank" href='https://github.com/merittrompeter/myHive'><i class="fa fa-github-square"></i></a>
+            </div>
+            <img class='imgR' src='images/myhive.png'>
+          </div>
+          <div class='row'>
+            <div class='right'>
+              <h2 class='smallCaps'>Mesa</h2>
+              <p class='smallCaps'>Technologies: Node.js, Express</p>
+              <a target="_blank" href='http://enlamesa.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+              <a target="_blank" href='https://github.com/merittrompeter/mesa'><i class="fa fa-github-square"></i></a>
+            </div>
+            <img class='imgL' src='images/mesa.png'>
+          </div>
+          <div class='row'>
+            <div class='left'>
+              <h2 class='smallCaps'>The Chase</h2>
+              <p class='smallCaps'>Technologies: HTML, CSS, Javascript</p>
+              <a target="_blank" href='http://merittrompeter.github.io/theChase/'><i class="fa fa-laptop"></i></a>
+              <a target="_blank" href='https://github.com/merittrompeter/theChase'><i class="fa fa-github-square"></i></a>
+            </div>
+            <img class='imgR' src='images/theChase.png'>
+          </div>
+
+      </div>
+      </div>
+
+      <div id='contact' class='bottom-aligned-text'>
+        <a target="_blank" href='https://github.com/merittrompeter'><h2><i class="fa fa-github-square"></i></h2></a>
+        <a target="_blank" href='https://www.linkedin.com/in/merittrompeter'><h2><i class="fa fa-linkedin-square"></i></h2></a>
+        <a href="mailto:mktrompeter@gmail.com"><h2><i class="fa fa-send"></i></h2></a>
+        <a target="_blank" href='https://resume.creddle.io/resume/1fya5g9lf84'><h2><i class="fa fa-file-text-o"></i></h2></a>
+        <h6><i class="fa fa-copyright"></i> 2015 Merit Trompeter</h6>
+      </div>
     </div>
   </div>
 </body>
