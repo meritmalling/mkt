@@ -9,20 +9,21 @@ body{
   -ms-user-select: none;
   user-select: none;
 }
+.media{
+  display: none;
+}
 .gray{
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-/*  background-color: #171717;*/
 }
 #wrapper{
-  height: 700px;
-  width: 100%;
+  min-height: 600px;
 }
 #top{
   background-color: #FAC6BF;
   width: 100%;
-  height: 175px;
+  height: 150px;
   position: relative;
 }
 #top h1{
@@ -40,16 +41,15 @@ body{
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  margin-bottom: -6px;
 }
 #bottom{
   background-color: #0A2531;
-  height: 600px;
 }
 #bottom h1{
   font-family: 'Old Standard TT', serif;
   font-variant: small-caps;
   font-size: 1.7em;
+
   width: 375px;
   text-align: center;
 
@@ -64,12 +64,7 @@ body{
   right: 0;
   margin: 0 auto;
 }
-/*#contact{
-  position: relative;
-  bottom: -20;
-  left: 0;
-  right: 0;
-}*/
+
 #contact h2{
 display: inline;
 padding: 10px;
@@ -111,7 +106,7 @@ img{
 }
 .inline{
   padding-top: 35px;
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -122,15 +117,18 @@ img{
 
 #contact h6{
   padding-top: 15px;
+  padding-bottom: 30px;
 }
 .about{
 /*  font-family: 'Old Standard TT', serif;*/
   font-variant: small-caps;
 }
 .inner{
-  padding-top: 50px;
   margin: 0 auto;
+  padding-top: 100px;
   text-align: center;
+  background-color: inherit;
+  min-height: 100%;
 }
 .tagShow{
   display: inline;
@@ -144,14 +142,11 @@ img{
 .hideImg{
   display: none;
 }
-.tag{
-  height: 25px;
-  width: 200px;
-}
 #photo{
-  border-radius: 6%;
-  width: 125px;
-  height: 125px;
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+  margin-top: -20px;
 }
 .space{
   padding-right: 10px;
@@ -179,12 +174,6 @@ li{
 .row{
   margin-bottom: 100px;
 }
-.imgL{
-  float: left;
-}
-.imgR{
-  float: right;
-}
 .wrapper .fa{
   padding-right: 5px;
   padding-left: 5px;
@@ -192,4 +181,20 @@ li{
 }
 embed{
   padding-bottom: 40px;
+}
+@media only screen and (max-device-width: 480px) {
+  #top h1 {width: 80%; font-size: 1em;}
+  #bottom h1 {width: 80%; font-size: 1em;}
+  .inline h2 {font-size: 1em}
+  #top {height: 100px;}
+  img {width: 200px; height: 150px; padding-top: 20px; text-align: center}
+  .right {float: none; margin: 0 auto;}
+  .left {float: none; margin: 0 auto;}
+  .media {display: inline;}
+  .inner {padding-top: 35px;}
+  #photo{ margin-top: 15px; padding: 0px; height: 100px; border-radius: 50%;}
+  .row {margin-bottom: 10px}
+  #contact{padding-top: 10px}
+  #contact h6 {padding-bottom: 30px;}
+  embed {display: none;}
 }
