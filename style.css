@@ -113,10 +113,16 @@ img{
 .inline h2{
   display: inline;
 }
+#contact{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 #contact h6{
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .about{
   font-variant: small-caps;

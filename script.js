@@ -1,9 +1,11 @@
 $(document).ready(function(){
     console.log('Running')
 
+    $("#bottom").height($(document).height() - $('#top').height());
+
     $('.tlt').textillate({
       selector: '.texts',
-      loop: false,
+      loop: true,
       minDisplayTime: 2000,
       initialDelay: 0,
       autoStart: true
@@ -13,21 +15,24 @@ $(document).ready(function(){
         $('.about').removeClass('hide').addClass('show');
         $('.portfolio').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
-        $('#bottom').css('height', 800)
+        $('#contact').css({ 'position': 'absolute', 'bottom': 0, 'left': 0, 'right': 0 })
+        // $('#bottom').css('height', 800)
     })
 
     $('#portfolio').on('click', function(){
         $('.portfolio').removeClass('hide').addClass('show');
         $('.about').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
-        $('#bottom').css('height', 2200)
+        $('#contact').css({ 'padding': '10px', 'position': 'relative', 'bottom': 'auto', 'left': 'auto', 'right': 'auto' })
+        // $('#bottom').css('height', 2200)
     })
 
     $('#resume').on('click', function(){
         $('.resume').removeClass('hide').addClass('show');
         $('.portfolio').removeClass('show').addClass('hide');
         $('.about').removeClass('show').addClass('hide');
-        $('#bottom').css('height', 1200)
+        $('#contact').css({ 'padding': '10px', 'position': 'relative', 'bottom': 'auto', 'left': 'auto', 'right': 'auto' })
+        // $('#bottom').css('height', 1200)
     })
     $('#home').on('click', function(){
         location.reload();
@@ -56,57 +61,47 @@ $(document).ready(function(){
     // })
 
     var count = 1;
-
     $('html').on('click', function(){
         count ++;
-        var isGray = false;
         if (count % 2 == 0){
             $('html').addClass('gray')
-            isGray = true;
-
         } else {
             $('html').removeClass('gray')
-            isGray = false
         };
-    //     if (isGray === false){
-    //         $('html').css('background-color', '#0A2531')
-    //     } else if (isGray === true){
-    //         $('html').addClass('gray')
-    // }
     });
 
-    $('#next').on('click', function(event){
+    // $('#next').on('click', function(event){
 
-        event.preventDefault();
+    //     event.preventDefault();
 
-        var currentImage = $('.show');
-        var nextImage = currentImage.next();
+    //     var currentImage = $('.show');
+    //     var nextImage = currentImage.next();
 
-        if (nextImage.length === 0){
-            nextImage = $('.work img').first()
-        }
+    //     if (nextImage.length === 0){
+    //         nextImage = $('.work img').first()
+    //     }
 
-        currentImage.removeClass('show').addClass('hide').css('z-index', -10)
-        nextImage.addClass('show').removeClass('hide').css('z-index', 20);
-        $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
-    });
+    //     currentImage.removeClass('show').addClass('hide').css('z-index', -10)
+    //     nextImage.addClass('show').removeClass('hide').css('z-index', 20);
+    //     $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
+    // });
 
 
-    $('#previous').on('click', function(event){
+    // $('#previous').on('click', function(event){
 
-        event.preventDefault();
+    //     event.preventDefault();
 
-        var currentImage = $('.showImg');
-        var nextImage = currentImage.prev();
+    //     var currentImage = $('.showImg');
+    //     var nextImage = currentImage.prev();
 
-        if (nextImage.length === 0){
-            nextImage = $('.work img').last()
-        }
+    //     if (nextImage.length === 0){
+    //         nextImage = $('.work img').last()
+    //     }
 
-        currentImage.removeClass('showImg').addClass('hideImg').css('z-index', -10)
-        nextImage.addClass('showImg').removeClass('hideImg').css('z-index', 20);
-        $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
-    });
+    //     currentImage.removeClass('showImg').addClass('hideImg').css('z-index', -10)
+    //     nextImage.addClass('showImg').removeClass('hideImg').css('z-index', 20);
+    //     $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
+    // });
 
 
 });
