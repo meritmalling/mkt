@@ -112,7 +112,6 @@ img{
 }
 .inline h2{
   display: inline;
-  /*font-weight: 900;*/
 }
 
 #contact h6{
@@ -120,7 +119,6 @@ img{
   padding-bottom: 30px;
 }
 .about{
-/*  font-family: 'Old Standard TT', serif;*/
   font-variant: small-caps;
 }
 .inner{
