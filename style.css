@@ -99,10 +99,12 @@ a:hover{
   color: inherit;
 }
 img{
-  margin: 0 auto;
+  margin: 10px;
+
   height: 300px;
-  width: 475px;
+  width: 465px;
   border-radius: 2%;
+
 }
 .inline{
   padding-top: 35px;
@@ -161,6 +163,7 @@ li{
 }
 .smallCaps{
   font-variant: small-caps;
+  font-size: 150%;
 }
 .inline p{
   display: inline;
@@ -172,7 +175,7 @@ li{
   float: right;
 }
 .wrapper{
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
 }
 .row{
@@ -185,6 +188,9 @@ li{
 }
 embed{
   padding-bottom: 40px;
+}
+.project{
+  font-size: 200%;
 }
 @media only screen and (max-device-width: 480px) {
   #top h1 {width: 80%; font-size: 1em;}
