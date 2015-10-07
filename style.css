@@ -116,12 +116,8 @@ img{
   display: inline;
 }
 #contact{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ padding: 10px;
 }
-
 #contact h6{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -207,4 +203,11 @@ embed{
   #contact{padding-top: 10px}
   #contact h6 {padding-bottom: 30px;}
   embed {display: none;}
+}
+strong{
+  font-weight: 900;
+}
+.aboutWrapper{
+  width: 50%;
+  margin: 0 auto;
 }

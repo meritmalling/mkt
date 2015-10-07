@@ -38,132 +38,139 @@
       <div class='tag'>
         <h1 class="tlt">
           <ul class="texts">
-              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Full Stack Web Developer</li>
-              <li data-in-effect="flipInX" data-out-effect="fadeOut" data-out-shuffle="true">Data Lover</li>
-              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Hobbyist Beekeeper</li>
-              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Newbie Gamer</li>
-              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Motor Scooter Enthusiast</li>
-              <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Full Stack Web Developer</li>
+            <li data-in-effect="flipInX" data-out-effect="fadeOut" data-out-shuffle="true">Full Stack Web Developer</li>
+            <li data-in-effect="flash" data-out-effect="fadeOut" data-out-shuffle="true">Data Lover</li>
+            <li data-in-effect="rotateIn" data-out-effect="fadeOut" data-out-shuffle="true">Newbie Gamer</li>
+            <li data-in-effect="swing" data-out-effect="fadeOut" data-out-shuffle="true">Hobbyist Beekeeper</li>
+            <li data-in-effect="tada" data-out-effect="fadeOut" data-out-shuffle="true">Motor Scooter Enthusiast</li>
           </ul>
         </h1>
       </div>
 
       <div class='inner'>
 
-      <div class='resume hide'>
-        <embed src="images/resume.pdf" width="700px" height="900px">
-        <!-- <div class='work'>
+        <div class='about show'>
+          <img id='photo' src='https://avatars2.githubusercontent.com/u/11151764?v=3&s=460'>
+          <div class='aboutWrapper'>
+            <h4>hi i'm merit, a web developer based in seattle, wa. </h4>
+            <br/>
+            <p>i come from a background in education and non-profit management, but the moment i was introduced to coding, i fell in <strong>love</strong>and droped everything to persue a career that allowed me to do what i love.</p>
+            <br/>
+            <p>while i relish all aspects of the developing process, i have a particular love of data. i love designing systems to organize and manage it, and i love to present it in clear and compelling ways.</p>
+            <br/>
+            <p>in developing my personal projects, i tend to gravitate towards projects that help people work or play collaboratively. whether i am helping a business communicate with its patrons, or allowing two friends to play a live game from oposite sides of the world, i enjoy leveraging the power of the internet to facilitate speedy communication.</p>
+            <br/>
+            <p>thanks for visiting. if you have a project in mind, please feel free to contact me.</p>
+            <p>i look forward to hearing from you!</p>
+          </div>
+        </div>
+
+        <div class='portfolio hide'>
+          <div class='wrapper'>
+            <div class='row'>
+              <div class='left'>
+                <div class='left'>
+                  <h2 class='smallCaps project'>Collaborative Sudoku</h2>
+                  <p class='smallCaps'>play sudoku collaboratively with a friend</p>
+                  <p>Simply login to Collaborative Sudoku,</p>
+                  <p>create a new game, and invite friends to play with you.</p>
+                  <p>The gameboard is live so you can</p>
+                  <p>watch eachother play and snowball to victory!</p>
+                  <p>Gameboards are generated dynamically for endless fun.</p>
+                  <p class='smallCaps'>Technologies: Sails, Angular.js, Angular Material</p>
+                  <a target="_blank" href='http://collaborativesudoku.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+                  <a target="_blank" href='https://github.com/merittrompeter/sudoku'><i class="fa fa-github-square"></i></a>
+                </div>
+              </div>
+              <img class='imgR' src='images/sudoku.png'>
+            </div>
+            <div class='row'>
+              <div class='right'>
+                <h2 class='smallCaps project'>Quickipedia</h2>
+                <p class='smallCaps'>Like to learn, don't want to read the whole article?</p>
+                <p>Quickipedia can help!</p>
+                <p>Concieved of and built in a two-person team, Quickipedia is</p>
+                <p>the product of on one day hackathon.</p>
+                <p>Using an Algorithmia algorithm it summarizes Wikipedia articles for you!</p>
+                <P>Want to learn something new? Ask for a random summary.</P>
+                <p class='smallCaps'>Technologies: Flask, React</p>
+                <a target="_blank" href='http://quickipedia.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+                <a target="_blank" href='https://github.com/merittrompeter/quickipedia'><i class="fa fa-github-square"></i></a>
+              </div>
+              <img class='imgL' src='images/quickipedia.png'>
+            </div>
+            <div class='row'>
+              <div class='left'>
+                <div class='left'>
+                  <h2 class='smallCaps project'>MyHive</h2>
+                  <p class='smallCaps'>A Honeybee Colony Tracking Tool</p>
+                  <p>This ruby-on-rails web app was designed</p>
+                  <p>for beekeepers looking for looking for an easier,</p>
+                  <p>more efficient way to track their hives.</p>
+                  <p>This user friendly program allows beekeepers</p>
+                  <p>to record observations and visualize trends quickly and easily.</p>
+                  <p class='smallCaps'>Technologies: Ruby on Rails, Materialize</p>
+                  <a target="_blank" href='http://myhive.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+                  <a target="_blank" href='https://github.com/merittrompeter/myHive'><i class="fa fa-github-square"></i></a>
+                </div>
+              </div>
+              <img class='imgR' src='images/myhive.png'>
+            </div>
+            <div class='row'>
+              <div class='right'>
+                <div class='right'>
+                  <h2 class='smallCaps project'>Mesa</h2>
+                  <p class='smallCaps'>A social media tool connecting Chefs to Foodies</p>
+                  <p>This web application, built in a three person team, connects chefs directly</p>
+                  <p>to customers, allowing the personality and creativity of the chef to shine.</p>
+                  <p>Foodies simply sign up with Mesa to follow their favorite chefs</p>
+                  <p>and get rewarded with updates and deals from those chefs/eateries!</p>
+                  <p class='smallCaps'>Technologies: Node.js, Express</p>
+                  <a target="_blank" href='http://enlamesa.herokuapp.com/'><i class="fa fa-laptop"></i></a>
+                  <a target="_blank" href='https://github.com/merittrompeter/mesa'><i class="fa fa-github-square"></i></a>
+                </div>
+              </div>
+              <img class='imgL' src='images/mesa.png'>
+            </div>
+            <div class='row'>
+              <div class='left'>
+                <h2 class='smallCaps project'>The Chase</h2>
+                <p class='smallCaps'>A Heist Game Set on the London Underground</p>
+                <p>This two-player front end game gives the detective</p>
+                <p>two minutes to find the theif on the London underground.</p>
+                <p>If the theif eludes the detective during the two</p>
+                <p>minute chase he gets away with his loot!</p>
+                <p class='smallCaps'>Technologies: HTML, CSS, Javascript/JQuery</p>
+                <a target="_blank" href='http://merittrompeter.github.io/theChase/'><i class="fa fa-laptop"></i></a>
+                <a target="_blank" href='https://github.com/merittrompeter/theChase'><i class="fa fa-github-square"></i></a>
+              </div>
+              <img class='imgR' src='images/theChase.png'>
+            </div>
+            <!-- <div class='work'>
             <img class='showImg carousel' src='images/sudoku.png'>
             <img class='hideImg carousel' src='images/quickipedia.png'>
             <img class='hideImg carousel' src='images/myhive.png'>
             <img class='hideImg carousel' src='images/mesa.png'>
             <img class='hideImg carousel' src='images/thechase.png'>
-        </div>
-        <div id='controls'>
-          <a href='#' id='previous'><h2><i class="fa fa-caret-left"></i></h2></a>
-          <a href='#' id='next'><h2><i class="fa fa-caret-right"></i></h2></a>
-        </div> -->
-      </div>
-
-        <div class='about show'>
-        <img id='photo' src='https://avatars2.githubusercontent.com/u/11151764?v=3&s=460'>
-        <h4>hi i'm merit, a full stack web developer based in seattle, wa. </h4>
-        <p>a year ago...</p>
-        <p></p>
-        <p></p>
+            </div>
+            <div id='controls'>
+            <a href='#' id='previous'><h2><i class="fa fa-caret-left"></i></h2></a>
+            <a href='#' id='next'><h2><i class="fa fa-caret-right"></i></h2></a>
+            </div> -->
+          </div>
         </div>
 
-        <div class='portfolio hide'>
-        <div class='wrapper'>
-          <div class='row'>
-            <div class='left'>
-            <div class='left'>
-              <h2 class='smallCaps project'>Collaborative Sudoku</h2>
-              <p class='smallCaps'>play sudoku collaboratively with a friend</p>
-              <p>Simply log in to Collaborative Sudoku,</p>
-              <p>create a new game, and invite friends to play with you.</p>
-              <p>The gameboard is live so you can</p>
-              <p>watch each other play and snowball to victory!</p>
-              <p>Gameboards are generated dynamically for endless fun!</p>
-              <p class='smallCaps'>Technologies: Sails, Angular.js, Angular Material</p>
-              <a target="_blank" href='http://collaborativesudoku.herokuapp.com/'><i class="fa fa-laptop"></i></a>
-              <a target="_blank" href='https://github.com/merittrompeter/sudoku'><i class="fa fa-github-square"></i></a>
-            </div>
-            </div>
-            <img class='imgR' src='images/sudoku.png'>
-          </div>
-          <div class='row'>
-            <div class='right'>
-              <h2 class='smallCaps project'>Quickipedia</h2>
-              <p class='smallCaps'>Like to learn, don't want to read the whole article?</p>
-              <p>Quickipedia can help!</p>
-              <p>Concieved of and built in a two person team, quickipedia is</p>
-              <p>the product of on one day hackathon.</p>
-              <p>Using an Algorithmia algorithm it summarizes the wikipedia article for you!</p>
-              <P>Want to learn something new? Ask for a random summary.</P>
-              <p class='smallCaps'>Technologies: Flask, React</p>
-              <a target="_blank" href='http://quickipedia.herokuapp.com/'><i class="fa fa-laptop"></i></a>
-              <a target="_blank" href='https://github.com/merittrompeter/quickipedia'><i class="fa fa-github-square"></i></a>
-            </div>
-            <img class='imgL' src='images/quickipedia.png'>
-          </div>
-          <div class='row'>
-            <div class='left'>
-            <div class='left'>
-              <h2 class='smallCaps project'>MyHive</h2>
-              <p class='smallCaps'>A honeybee colony tracking tool</p>
-              <p>This ruby-on-rails web-app was designed</p>
-              <p>for beekeepers looking for looking for an easier,</p>
-              <p>more efficient way to track their hives.</p>
-              <p>This user-friendly program allows beekeepers</p>
-              <p>to record observations and visualize trends quickly and easily.</p>
-              <p class='smallCaps'>Technologies: Ruby on Rails, Materialize</p>
-              <a target="_blank" href='http://myhive.herokuapp.com/'><i class="fa fa-laptop"></i></a>
-              <a target="_blank" href='https://github.com/merittrompeter/myHive'><i class="fa fa-github-square"></i></a>
-            </div>
-            </div>
-            <img class='imgR' src='images/myhive.png'>
-          </div>
-          <div class='row'>
-            <div class='right'>
-            <div class='right'>
-              <h2 class='smallCaps project'>Mesa</h2>
-              <p class='smallCaps'>A social media tool connecting chefs to foodies</p>
-              <p>This web application, built by a three person team, connects chefs directly</p>
-              <p>to customers, allowing the personality and creativity of the chef to shine.</p>
-              <p>Foodies simply sign up with Mesa to follow their favorite chefs</p>
-              <p>and get rewarded with updates and deals from those chefs/eateries!</p>
-              <p class='smallCaps'>Technologies: Node.js, Express</p>
-              <a target="_blank" href='http://enlamesa.herokuapp.com/'><i class="fa fa-laptop"></i></a>
-              <a target="_blank" href='https://github.com/merittrompeter/mesa'><i class="fa fa-github-square"></i></a>
-            </div>
-            </div>
-            <img class='imgL' src='images/mesa.png'>
-          </div>
-          <div class='row'>
-            <div class='left'>
-              <h2 class='smallCaps project'>The Chase</h2>
-              <p class='smallCaps'>A Heist Game Set on the London Underground</p>
-              <p>This two-player front end game gives the detective</p>
-              <p>two minutes to find the theif on the London underground.</p>
-              <p>If the theif eludes the detective during the two</p>
-              <p>minute chase he gets away with his loot!</p>
-              <p class='smallCaps'>Technologies: HTML, CSS, Javascript/JQuery</p>
-              <a target="_blank" href='http://merittrompeter.github.io/theChase/'><i class="fa fa-laptop"></i></a>
-              <a target="_blank" href='https://github.com/merittrompeter/theChase'><i class="fa fa-github-square"></i></a>
-            </div>
-            <img class='imgR' src='images/theChase.png'>
-          </div>
+        <div class='resume hide'>
+          <embed src="images/resume.pdf" width="700px" height="900px">
+        </div>
 
-      </div>
-      </div>
-
-      <div id='contact' class='bottom-aligned-text'>
-        <a target="_blank" href='https://github.com/merittrompeter'><h2><i class="fa fa-github-square"></i></h2></a>
-        <a target="_blank" href='https://www.linkedin.com/in/merittrompeter'><h2><i class="fa fa-linkedin-square"></i></h2></a>
-        <a href="mailto:mktrompeter@gmail.com"><h2><i class="fa fa-send"></i></h2></a>
-        <a target="_blank" href='https://resume.creddle.io/resume/1fya5g9lf84'><h2><i class="fa fa-file-text-o"></i></h2></a>
-        <h6><i class="fa fa-copyright"></i> 2015 Merit Trompeter</h6>
+        <div id='contact' class='bottom-aligned-text'>
+          <a target="_blank" href='https://github.com/merittrompeter'><h2><i class="fa fa-github-square"></i></h2></a>
+          <a target="_blank" href='https://www.linkedin.com/in/merittrompeter'><h2><i class="fa fa-linkedin-square"></i></h2></a>
+          <a href="mailto:mktrompeter@gmail.com"><h2><i class="fa fa-send"></i></h2></a>
+          <a target="_blank" href='https://resume.creddle.io/resume/1fya5g9lf84'><h2><i class="fa fa-file-text-o"></i></h2></a>
+          <h6><i class="fa fa-copyright"></i> 2015 Merit Trompeter</h6>
+        </div>
       </div>
     </div>
   </div>
