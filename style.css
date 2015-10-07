@@ -211,3 +211,14 @@ strong{
   width: 50%;
   margin: 0 auto;
 }
+.shrink{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.expand{
+  width: 110%;
+  margin: 0 auto;
+  margin-left: -5%;
+  text-align: center;
+}
