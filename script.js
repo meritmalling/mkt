@@ -37,11 +37,11 @@ $(document).ready(function(){
     $('html').on('click', function(){
         count ++;
         if (count % 2 == 0){
-            $('#top').css({'background-color':'white', 'color':'black'})
-            $('#bottom').css({'background-color':'black', 'color':'white'})
+            $('#top').css({'background-color':'black', 'color':'white'})
+            $('#bottom').css({'background-color':'white', 'color':'black'})
             $('embed').addClass('gray')
-            $('#home').css({'border-color':'black'})
-            $('.tlt').css({'border-color':'white'})
+            $('#home').css({'border-color':'white'})
+            $('.tlt').css({'border-color':'black'})
         } else {
             $('#top').css({'background-color':'#FAC6BF', 'color':'#C28C57'})
             $('#bottom').css({'background-color':'#0A2531', 'color':'#C28C57'})
