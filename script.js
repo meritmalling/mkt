@@ -37,9 +37,18 @@ $(document).ready(function(){
     $('html').on('click', function(){
         count ++;
         if (count % 2 == 0){
-            $('html').addClass('gray')
+            $('#top').css({'background-color':'white', 'color':'black'})
+            $('#bottom').css({'background-color':'black', 'color':'white'})
+            $('embed').addClass('gray')
+            $('#home').css({'border-color':'black'})
+            $('.tlt').css({'border-color':'white'})
         } else {
-            $('html').removeClass('gray')
+            $('#top').css({'background-color':'#FAC6BF', 'color':'#C28C57'})
+            $('#bottom').css({'background-color':'#0A2531', 'color':'#C28C57'})
+            $('embed').removeClass('gray')
+            $('#home').css({'border-color':'#C28C57'})
+            $('.tlt').css({'border-color':'#C28C57'})
+
         };
     });
 
