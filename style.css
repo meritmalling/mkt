@@ -198,6 +198,7 @@ embed{
   #contact{padding-top: 10px}
   #contact h6 {padding-bottom: 30px;}
   embed {display: none;}
+  #photo{ height: 125px; width: 125px; border-radius: 50%; margin-bottom: 10px;}
 }
 strong{
   font-weight: 900;
