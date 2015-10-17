@@ -228,6 +228,6 @@ strong{
   .left {float: none;}
   .respond {width: 60%; margin-top: 20px;}
   .screenshot {width: 100%;}
-  .project {margin-top: -50px;}
+  .project {margin-top: 10px;}
   .project :firt-child {margin-top: 150px;}
 }
