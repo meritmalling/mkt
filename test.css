@@ -1,0 +1,66 @@
+img{
+    width: 100%;
+}
+.circles{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: pink;
+}
+.circles div{
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+}
+#sudokucircle{
+    background-color:#AFDFDD ;
+}
+#sudokucircle img{
+    height: 90px;
+    width: 90px;
+    margin-top: 30px;
+}
+#quickcircle{
+    background-color: #DA5530;
+}
+#quickcircle img{
+    margin-top: 30px;
+    height: 80px;
+    width: 70px;
+
+}
+#myhivecircle {
+    background-color: #7BB089;
+}
+#myhivecircle img{
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+}
+#mesacircle{
+    background-color: #DA5530;
+}
+#mesacircle img{
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+
+}
+#chasecircle{
+    background-color: #AFDFDD;
+}
+#chasecircle img{
+    margin-top: 25px;
+    height: 90px;
+    width: 90px;
+}
+#test{
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+
+}

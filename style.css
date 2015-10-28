@@ -66,8 +66,8 @@ body{
 }
 
 #contact h2{
-display: inline;
-padding: 10px;
+  display: inline;
+  padding: 10px;
 }
 .work{
   margin: 0 auto;
@@ -110,6 +110,7 @@ img{
 }
 .inline h2{
   display: inline;
+  cursor: pointer;
 }
 #contact{
  padding: 10px;
