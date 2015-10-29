@@ -10,7 +10,6 @@ img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: pink;
 }
 .circles div{
     display: inline-block;
@@ -32,7 +31,6 @@ img{
     margin-top: 30px;
     height: 80px;
     width: 70px;
-
 }
 #myhivecircle {
     background-color: #7BB089;
@@ -47,9 +45,9 @@ img{
 }
 #mesacircle img{
     margin-top: 25px;
+    margin-left: 5px;
     height: 100px;
     width: 100px;
-
 }
 #chasecircle{
     background-color: #AFDFDD;
@@ -61,6 +59,6 @@ img{
 }
 #test{
     position: absolute;
-    clip: rect(0px,60px,200px,0px);
+    clip: rect(10px,90px,120px,10px);
 
 }
