@@ -5,7 +5,7 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $("#buffer").offset().top
         }, 500);
-    }
+    };
 
     $('.tlt').textillate({
         selector: '.texts',
@@ -19,7 +19,9 @@ $(document).ready(function(){
         $('.about').removeClass('hide').addClass('show');
         $('.work').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
+        $('#up').show()
         scroll();
+        $('#up').removeClass('hide');
     });
 
     $('#portfolio').on('click', function(){
@@ -27,46 +29,45 @@ $(document).ready(function(){
         $('.about').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
         scroll();
+        $('#up').removeClass('hide');
     });
 
     $('#resume').on('click', function(){
-        $('.resume').removeClass('hide').addClass('show');
-        $('.work').removeClass('show').addClass('hide');
-        $('.about').removeClass('show').addClass('hide');
-        scroll();
+
     });
 
     $('#home').on('click', function(){
         location.reload();
     });
 
+    $('#up').on('click', function(){
+        $('.work').removeClass('show').addClass('hide');
+        $('.about').removeClass('show').addClass('hide');
+        $('#up').addClass('hide');
+    });
+
+
+// Hover Icons
     $('#sudokucircle').on('mouseover', function(){
         $('.piece').hide()
         $('#sudokutext').removeClass('hide').show()
     });
-
     $('#quickcircle').on('mouseover', function(){
         $('.piece').hide()
         $('#quicktext').removeClass('hide').show()
     });
-
     $('#myhivecircle').on('mouseover', function(){
-
         $('.piece').hide()
         $('#hivetext').removeClass('hide').show()
     });
-
     $('#mesacircle').on('mouseover', function(){
         $('.piece').hide()
         $('#mesatext').removeClass('hide').show()
     });
-
     $('#chasecircle').on('mouseover', function(){
         $('.piece').hide()
         $('#chasetext').removeClass('hide').show()
     });
-
-
 
 
 });
