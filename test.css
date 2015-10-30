@@ -108,7 +108,7 @@ body{
     width: 200px;
 }
 #buffer {
-    margin-top: 20px;
+    margin-top: 40px;
     height: 20px;
     width: 100%;
 }
@@ -139,7 +139,8 @@ body{
   margin: 0 auto;
   text-align: center;
   z-index: 1;
-  margin-top: -180px;
+  margin-top: -160px;
+  margin-bottom: 20px;
 }
 .inline h2 {
   cursor: pointer;
@@ -162,4 +163,10 @@ body{
 }
 .descriptions{
     margin-bottom: 30px;
+}
+.piece h3 {
+    margin-top: -5px;
+}
+.skills h3 {
+    display: inline;
 }
