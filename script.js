@@ -1,7 +1,11 @@
 $(document).ready(function(){
     console.log('Running')
 
-    $("#bottom").height($(document).height() - $('#top').height());
+    var scroll = function(){
+        $('html, body').animate({
+            scrollTop: $("#buffer").offset().top
+        }, 500);
+    };
 
     $('.tlt').textillate({
         selector: '.texts',
@@ -13,77 +17,57 @@ $(document).ready(function(){
 
     $('#about').on('click', function(){
         $('.about').removeClass('hide').addClass('show');
-        $('.portfolio').removeClass('show').addClass('hide');
+        $('.work').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
+        $('#up').show()
+        scroll();
+        $('#up').removeClass('hide');
     });
 
     $('#portfolio').on('click', function(){
-        $('.portfolio').removeClass('hide').addClass('show');
+        $('.work').removeClass('hide').addClass('show');
         $('.about').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
+        scroll();
+        $('#up').removeClass('hide');
     });
 
     $('#resume').on('click', function(){
-        $('.resume').removeClass('hide').addClass('show');
-        $('.portfolio').removeClass('show').addClass('hide');
-        $('.about').removeClass('show').addClass('hide');
+
     });
 
     $('#home').on('click', function(){
         location.reload();
     });
 
-    var count = 1;
-    $('html').on('click', function(){
-        count ++;
-        if (count % 2 === 0){
-            $('#top').css({'background-color':'black', 'color':'white'});
-            $('#bottom').css({'background-color':'white', 'color':'black'});
-            $('embed').addClass('gray');
-            $('#home').css({'border-color':'white'});
-            $('.tlt').css({'border-color':'black'});
-        } else {
-            $('#top').css({'background-color':'#FAC6BF', 'color':'#C28C57'});
-            $('#bottom').css({'background-color':'#0A2531', 'color':'#C28C57'});
-            $('embed').removeClass('gray');
-            $('#home').css({'border-color':'#C28C57'});
-            $('.tlt').css({'border-color':'#C28C57'});
-
-        }
+    $('#up').on('click', function(){
+        $('.work').removeClass('show').addClass('hide');
+        $('.about').removeClass('show').addClass('hide');
+        $('#up').addClass('hide');
     });
 
-    // $('#next').on('click', function(event){
 
-    //     event.preventDefault();
-
-    //     var currentImage = $('.show');
-    //     var nextImage = currentImage.next();
-
-    //     if (nextImage.length === 0){
-    //         nextImage = $('.work img').first()
-    //     }
-
-    //     currentImage.removeClass('show').addClass('hide').css('z-index', -10)
-    //     nextImage.addClass('show').removeClass('hide').css('z-index', 20);
-    //     $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
-    // });
-
-
-    // $('#previous').on('click', function(event){
-
-    //     event.preventDefault();
-
-    //     var currentImage = $('.showImg');
-    //     var nextImage = currentImage.prev();
-
-    //     if (nextImage.length === 0){
-    //         nextImage = $('.work img').last()
-    //     }
-
-    //     currentImage.removeClass('showImg').addClass('hideImg').css('z-index', -10)
-    //     nextImage.addClass('showImg').removeClass('hideImg').css('z-index', 20);
-    //     $('.carousel').not([currentImage, nextImage]).css('z-index', 1)
-    // });
+// Hover Icons
+    $('#sudokucircle').on('mouseover', function(){
+        $('.piece').hide()
+        $('#sudokutext').removeClass('hide').show()
+    });
+    $('#quickcircle').on('mouseover', function(){
+        $('.piece').hide()
+        $('#quicktext').removeClass('hide').show()
+    });
+    $('#myhivecircle').on('mouseover', function(){
+        $('.piece').hide()
+        $('#hivetext').removeClass('hide').show()
+    });
+    $('#mesacircle').on('mouseover', function(){
+        $('.piece').hide()
+        $('#mesatext').removeClass('hide').show()
+    });
+    $('#chasecircle').on('mouseover', function(){
+        $('.piece').hide()
+        $('#chasetext').removeClass('hide').show()
+    });
 
 
 });
