@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link href="animate.css" rel="stylesheet">
-<!--   <link href="style.css" rel="stylesheet"> -->
   <link href="style.css" rel="stylesheet">
 
 
@@ -25,7 +24,7 @@
 </head>
 <body>
 
-  <div id='upper'class="row">
+  <div id='upper'class="row noselect">
 
     <div id='top'>
         <h2 id='home'>MERIT TROMPETER</h2>
@@ -43,34 +42,35 @@
         </h3>
       </div>
     </div>
-    <div class="row">
+
+    <div class="row noselect">
       <img id='desk' src="images/desk.png">
       <div class='inline'>
           <h2 id='about'>ABOUT</h2>
           <h2 id='portfolio'>WORK</h2>
-  <!--         <a href="https://resume.creddle.io/resume/1fya5g9lf84" target="_blank"><h2 id='resume'>RESUME</h2></a> -->
       </div>
     </div>
 
   <div id='buffer'></div>
   <div class="row about">
+  <div class='noselect'>
     <img id='grandma' src='images/grandma.png'>
-    <div>
-      <br/>
+    </div>
+    <div class='aboutme'>
       <h4 class='smallcaps'>Hi I'm Merit, a web developer based in Seattle. </h4>
-      <h5>I come from a background in education and non-profit management,</h5>
-      <h5>but the moment I was introduced to coding, I fell in love.</h5>
+      <h4>I come from a background in education and non-profit management,</h4>
+      <h4>but the moment I was introduced to coding, I fell in love.</h4>
       <br/>
-      <h5>While I relish all aspects of the developing process, I have a particular love of data.</h5>
-      <h5>I love designing systems to organize and manage it, and I love to present it in clear and compelling ways.</h5>
+      <h4>While I relish all aspects of the developing process, I have a particular love of data.</h4>
+      <h4>I love designing systems to organize and manage it, and I love to present it in clear and compelling ways.</h4>
       <br/>
-      <h5>In developing my personal projects, I tend to gravitate towards projects that help people work or play collaboratively.</h5>
-      <h5>Whether I am helping a business communicate with customers, or allowing friends to play a game from across the country,</h5>
-      <h5>I enjoy leveraging the power of the internet to facilitate speedy communication.</h5>
+      <h4>In developing my personal projects, I tend to gravitate towards projects that help people work or play collaboratively.</h4>
+      <h4>Whether I am helping a business communicate with customers, or allowing friends to play a game from across the country,</h4>
+      <h4>I enjoy leveraging the power of the internet to facilitate speedy communication.</h4>
       <br/>
-      <h5>Thanks for visiting. If you have a project in mind, or just want to chat please feel free to contact me.</h5>
-      <h5>I look forward to hearing from you!</h5>
-      <div class='skills'>
+      <h4>Thanks for visiting. If you have a project in mind, or just want to chat please feel free to contact me.</h4>
+      <h4>I look forward to hearing from you!</h4>
+      <div class='skills noselect'>
         <br/>
           <h3><i class="devicon-javascript-plain"></i></h3>
           <h3><i class="devicon-jquery-plain"></i></h3>
@@ -118,27 +118,87 @@
 
     <div class='descriptions'>
 
+      <div class='space' id='bufferone'></div>
+
       <div id='sudokutext' class='row piece'>
         <h2 class='smallcaps'>Sudoku</h2>
         <h3 class='smallcaps'>a two player sudoku game</h3>
         <p>Simply login to Collaborative Sudoku, create a new game, and invite a friend to play with you.</p>
-        <p>The gameboard is live so you can watch eachother play and snowball to victory! Gameboards are generated dynamically for endless fun.</p>
+        <p>The gameboard is live so you can watch eachother play and snowball to victory!</p>
+        <p>Gameboards are generated dynamically for endless fun.</p>
         <p class='smallcaps'>Technologies: Sails, Angular.js, Angular Material</p>
         <a target="_blank" href='http://collaborativesudoku.herokuapp.com/'><h1><i class="fa fa-laptop"></i></h1></a>
         <a target="_blank" href='https://github.com/merittrompeter/sudoku'><h1><i class="fa fa-github-square"></i></h1></a>
+
+        <div class='s-circles'>
+
+          <div class='s-circle s-sudokucircle'>
+            <img src="images/board.png">
+          </div>
+
+          <div class='s-circle s-quickcircle'>
+            <img src="https://homebartenderapp.files.wordpress.com/2013/04/magnifying_glass.png">
+          </div>
+
+          <div class='s-circle s-myhivecircle'>
+            <img src="https://cdn1.iconfinder.com/data/icons/animals-7/24/Bee-512.png">
+          </div>
+
+          <div class='s-circle s-mesacircle'>
+            <img src="images/chef.png">
+          </div>
+
+          <div class='s-circle s-chasecircle'>
+            <img src="http://www.clker.com/cliparts/1/y/f/S/A/q/male-detective-hi.png">
+          </div>
+
+        </div>
+
+
       </div>
 
-      <div id='quicktext' class='row hide piece'>
+      <div class='space' id='buffertwo'></div>
+
+      <div id='quicktext' class='row piece'>
+        <i class="fa fa-arrow-circle-up up"></i>
         <h2 class='smallcaps'>Quickipedia</h2>
         <h3 class='smallcaps'>a wikipedia article summarizer</h3>
         <p>Concieved of and built in a two-person team, Quickipedia is the product of on one day hackathon.</p>
-        <p>Using an Algorithmia algorithm it summarizes Wikipedia articles for you! Want to learn something new? Ask for a random summary.</P>
+        <p>Using an Algorithmia algorithm it summarizes Wikipedia articles for you!</p>
+        <p>Want to learn something new? Ask for a random summary.</P>
         <p class='smallcaps'>Technologies: Flask, React</p>
         <a target="_blank" href='http://quickipedia.herokuapp.com/'><h1><i class="fa fa-laptop"></i></h1></a>
         <a target="_blank" href='https://github.com/merittrompeter/quickipedia'><h1><i class="fa fa-github-square"></i></h1></a>
+        <div class='s-circles'>
+
+          <div class='s-circle s-sudokucircle'>
+            <img src="images/board.png">
+          </div>
+
+          <div class='s-circle s-quickcircle'>
+            <img src="https://homebartenderapp.files.wordpress.com/2013/04/magnifying_glass.png">
+          </div>
+
+          <div class='s-circle s-myhivecircle'>
+            <img src="https://cdn1.iconfinder.com/data/icons/animals-7/24/Bee-512.png">
+          </div>
+
+          <div class='s-circle s-mesacircle'>
+            <img src="images/chef.png">
+          </div>
+
+          <div class='s-circle s-chasecircle'>
+            <img src="http://www.clker.com/cliparts/1/y/f/S/A/q/male-detective-hi.png">
+          </div>
+
+        </div>
+
       </div>
 
-      <div id='hivetext' class='row hide piece'>
+      <div class='space' id='bufferthree'></div>
+
+      <div id='hivetext' class='row piece'>
+        <i class="fa fa-arrow-circle-up up"></i>
         <h2 class='smallcaps'>MyHive</h2>
         <h3 class='smallcaps'>a honeybee colony tracking tool</h3>
         <p>Designed for hobbyist beekeepers looking for an easier, more efficient way to track their hives.</p>
@@ -146,9 +206,35 @@
         <p class='smallcaps'>Technologies: Ruby on Rails, Materialize</p>
         <a target="_blank" href='http://myhive.herokuapp.com/'><h1><i class="fa fa-laptop"></i></h1></a>
         <a target="_blank" href='https://github.com/merittrompeter/myHive'><h1><i class="fa fa-github-square"></i></h1></a>
+        <div class='s-circles'>
+
+          <div class='s-circle s-sudokucircle'>
+            <img src="images/board.png">
+          </div>
+
+          <div class='s-circle s-quickcircle'>
+            <img src="https://homebartenderapp.files.wordpress.com/2013/04/magnifying_glass.png">
+          </div>
+
+          <div class='s-circle s-myhivecircle'>
+            <img src="https://cdn1.iconfinder.com/data/icons/animals-7/24/Bee-512.png">
+          </div>
+
+          <div class='s-circle s-mesacircle'>
+            <img src="images/chef.png">
+          </div>
+
+          <div class='s-circle s-chasecircle'>
+            <img src="http://www.clker.com/cliparts/1/y/f/S/A/q/male-detective-hi.png">
+          </div>
+
+        </div>
       </div>
 
-      <div id='mesatext' class='row hide piece'>
+      <div class='space' id='bufferfour'></div>
+
+      <div id='mesatext' class='row piece'>
+        <i class="fa fa-arrow-circle-up up"></i>
         <h2 class='smallcaps'>Mesa</h2>
         <h3 class='smallcaps'>a social media tool connecting chefs to foodies</h3>
         <p>Built in a three person team, Mesa is a social media tool that connects chefs directly to customers.</p>
@@ -156,9 +242,35 @@
         <p class='smallcaps'>Technologies: Node.js, Express</p>
         <a target="_blank" href='http://enlamesa.herokuapp.com/'><h1><i class="fa fa-laptop"></i></h1></a>
         <a target="_blank" href='https://github.com/merittrompeter/mesa'><h1><i class="fa fa-github-square"></i></h1></a>
+        <div class='s-circles'>
+
+          <div class='s-circle s-sudokucircle'>
+            <img src="images/board.png">
+          </div>
+
+          <div class='s-circle s-quickcircle'>
+            <img src="https://homebartenderapp.files.wordpress.com/2013/04/magnifying_glass.png">
+          </div>
+
+          <div class='s-circle s-myhivecircle'>
+            <img src="https://cdn1.iconfinder.com/data/icons/animals-7/24/Bee-512.png">
+          </div>
+
+          <div class='s-circle s-mesacircle'>
+            <img src="images/chef.png">
+          </div>
+
+          <div class='s-circle s-chasecircle'>
+            <img src="http://www.clker.com/cliparts/1/y/f/S/A/q/male-detective-hi.png">
+          </div>
+
+        </div>
       </div>
 
-      <div id='chasetext'class='row hide piece'>
+      <div class='space' id='bufferfive'></div>
+
+      <div id='chasetext'class='row piece'>
+        <i class="fa fa-arrow-circle-up up"></i>
         <h2 class='smallcaps'>The Chase</h2>
         <h3 class='smallcaps'>a heist game set on the london underground</h3>
         <p>This two-player front end game gives the detective two minutes to find the theif on the London underground.</p>
@@ -166,6 +278,40 @@
         <p class='smallcaps'>Technologies: HTML, CSS, Javascript/JQuery</p>
         <a target="_blank" href='http://merittrompeter.github.io/theChase/'><h1><i class="fa fa-laptop"></i></h1></a>
         <a target="_blank" href='https://github.com/merittrompeter/theChase'><h1><i class="fa fa-github-square"></i></h1></a>
+
+        <div class='s-circles'>
+
+          <div class='s-circle s-sudokucircle'>
+            <img src="images/board.png">
+          </div>
+
+          <div class='s-circle s-quickcircle'>
+            <img src="https://homebartenderapp.files.wordpress.com/2013/04/magnifying_glass.png">
+          </div>
+
+          <div class='s-circle s-myhivecircle'>
+            <img src="https://cdn1.iconfinder.com/data/icons/animals-7/24/Bee-512.png">
+          </div>
+
+          <div class='s-circle s-mesacircle'>
+            <img src="images/chef.png">
+          </div>
+
+          <div class='s-circle s-chasecircle'>
+            <img src="http://www.clker.com/cliparts/1/y/f/S/A/q/male-detective-hi.png">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class='space' id='buffersix'>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h3>And I'm always toying with something on the side,</h3>
+        <h3>so please check again soon or see github for other projects!</h3>
       </div>
 
     </div>
@@ -175,7 +321,7 @@
 
 
 
-  <div class="footer row">
+  <div class="footer row noselect">
     <h1 id='up' class='hide'><i class="fa fa-arrow-circle-up"></i></h1>
     <div id='contact' class='bottom-aligned-text'>
       <a target="_blank" href='https://github.com/merittrompeter'><h2><i class="fa fa-github-square"></i></h2></a>

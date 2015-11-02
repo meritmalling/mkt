@@ -1,9 +1,9 @@
 $(document).ready(function(){
     console.log('Running')
 
-    var scroll = function(){
+    var scroll = function(where){
         $('html, body').animate({
-            scrollTop: $("#buffer").offset().top
+            scrollTop: where.offset().top
         }, 500);
     };
 
@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('.work').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
         $('#up').show()
-        scroll();
+        scroll($("#buffer"));
         $('#up').removeClass('hide');
     });
 
@@ -28,7 +28,7 @@ $(document).ready(function(){
         $('.work').removeClass('hide').addClass('show');
         $('.about').removeClass('show').addClass('hide');
         $('.resume').removeClass('show').addClass('hide');
-        scroll();
+        scroll($("#buffer"));
         $('#up').removeClass('hide');
     });
 
@@ -47,27 +47,67 @@ $(document).ready(function(){
     });
 
 
-// Hover Icons
-    $('#sudokucircle').on('mouseover', function(){
-        $('.piece').hide()
-        $('#sudokutext').removeClass('hide').show()
+// Large Icons
+    $('#sudokucircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#sudokutext').removeClass('hide').show();
+        scroll($("#sudokutext"));
     });
-    $('#quickcircle').on('mouseover', function(){
-        $('.piece').hide()
-        $('#quicktext').removeClass('hide').show()
+    $('#quickcircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#quicktext').removeClass('hide').show();
+        scroll($("#quicktext"));
     });
-    $('#myhivecircle').on('mouseover', function(){
-        $('.piece').hide()
-        $('#hivetext').removeClass('hide').show()
+    $('#myhivecircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#hivetext').removeClass('hide').show();
+        scroll($("#hivetext"));
     });
-    $('#mesacircle').on('mouseover', function(){
-        $('.piece').hide()
-        $('#mesatext').removeClass('hide').show()
+    $('#mesacircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#mesatext').removeClass('hide').show();
+        scroll($("#mesatext"));
     });
-    $('#chasecircle').on('mouseover', function(){
-        $('.piece').hide()
-        $('#chasetext').removeClass('hide').show()
+    $('#chasecircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#chasetext').removeClass('hide').show();
+        scroll($("#chasetext"));
     });
 
+    $('.up').on('click', function(){
+        scroll($("#buffer"));
+    });
+
+// Small Icons
+    $('.s-sudokucircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#sudokutext').removeClass('hide').show();
+        scroll($("#sudokutext"));
+    });
+    $('.s-quickcircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#quicktext').removeClass('hide').show();
+        scroll($("#quicktext"));
+    });
+    $('.s-myhivecircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#hivetext').removeClass('hide').show();
+        scroll($("#hivetext"));
+    });
+    $('.s-mesacircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#mesatext').removeClass('hide').show();
+        scroll($("#mesatext"));
+    });
+    $('.s-chasecircle').on('click', function(){
+        // $('.piece').hide();
+        // $('#chasetext').removeClass('hide').show();
+        scroll($("#chasetext"));
+    });
+
+    $('.up').on('click', function(){
+        console.log('test')
+        scroll($("#buffer"));
+    });
 
 });

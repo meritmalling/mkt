@@ -3,13 +3,6 @@ body{
     text-align: center;
     background-color: #FFFCEE;
     font-family: 'Poiret One', cursive;
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 .circles {
     width: 80%;
@@ -105,7 +98,7 @@ body{
     font-variant: small-caps;
 }
 #grandma {
-    width: 200px;
+    width: 180px;
 }
 #buffer {
     margin-top: 40px;
@@ -169,4 +162,107 @@ body{
 }
 .skills h3 {
     display: inline;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.space {
+    height: 100px;
+    width: 100%;
+}
+#buffersix {
+    height: 200px;
+}
+
+
+
+
+.s-circles {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.s-circles h2 {
+    margin-bottom: 20px;
+}
+.s-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.s-circles div {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.s-sudokucircle {
+    background-color: #AFDFDD;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.s-sudokucircle img {
+    height: 20px;
+    width: 20px;
+    margin-top: 6px;
+}
+
+.s-quickcircle {
+    background-color: #DA5530;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.s-quickcircle img {
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+}
+
+.s-myhivecircle {
+    background-color: #7BB089;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.s-myhivecircle img {
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+}
+
+.s-mesacircle {
+    background-color: #DA5530;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.s-mesacircle img {
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+}
+
+.s-chasecircle {
+    background-color: #AFDFDD;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.s-chasecircle img {
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+}
+.piece {
+    font-size: 125%;
+}
+#bufferone {
+ height: 40px;
 }
