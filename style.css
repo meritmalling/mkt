@@ -269,12 +269,21 @@ body{
 #mobilesmall{
     display:none;
 }
+#smallbottom {
+    display:none;
+}
 
 @media (max-width: 1200px){
     #desk {height: 350px;}
     #about {margin-top: 40px;}
     .about {width: 90%; margin: 0 auto;}
-    .work {width: 90%; margin: 0 auto;}
+    .work {width: 85%; margin: 0 auto;}
     .circles{display:none;}
     #mobilesmall{display: inline;}
+    #buffersix{display: none;}
+    #smallbottom{display: inline;}
+    .space{height: 50px;}
+    .piece h3 {width: 75%; margin: 0 auto; padding-bottom: 10px;}
+    #hivetext h3 {width: 65%; margin: 0 auto; padding-bottom: 10px;}
+    .piece p {width: 75%; margin: 0 auto;}
 }
