@@ -13,6 +13,7 @@ body{
     margin-bottom: 20px;
 }
 .circle {
+    cursor: pointer;
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -183,6 +184,7 @@ body{
 
 
 .s-circles {
+    cursor: pointer;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -271,6 +273,12 @@ body{
 }
 #smallbottom {
     display:none;
+}
+.fa-arrow-circle-up{
+    cursor: pointer;
+}
+#home{
+    cursor: pointer;
 }
 
 @media (max-width: 1200px){
