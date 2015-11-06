@@ -266,3 +266,15 @@ body{
 #bufferone {
  height: 40px;
 }
+#mobilesmall{
+    display:none;
+}
+
+@media (max-width: 1200px){
+    #desk {height: 350px;}
+    #about {margin-top: 40px;}
+    .about {width: 90%; margin: 0 auto;}
+    .work {width: 90%; margin: 0 auto;}
+    .circles{display:none;}
+    #mobilesmall{display: inline;}
+}
