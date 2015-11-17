@@ -1,0 +1,1413 @@
+@charset "UTF-8";
+/* CSS Document *//* Template Design by Southborough Website Design, http://southboroughwebsitedesign.com/  */
+/* For http://www.calculatorsoup.com/ */
+
+/**************** body styles ****************/
+body {
+	width: 986px; /* fix page width */
+	margin:auto; /* center in viewport */
+	padding:0;
+	color:#000000;
+	background-color:#f0f0f0;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:83%;
+}
+
+a:link {color:#0000FF;}        /* specificity = 1,1 */
+a:visited {color: #800080;}   /* specificity = 1,1 */
+a:active {color: #990000;}       /* specificity = 1,1 */
+
+/* standard elements */
+.alignLeft {
+	text-align:left;
+}
+.alignRight {
+	text-align:right;
+}
+.alignCenter {
+	text-align:center;
+}
+.floatLeft {
+	float:left;
+}
+.floatRight {
+	float:right;
+}
+.clearBoth {
+	clear:both;
+}
+.clear {
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+.height0 {
+	height:0;
+}
+
+.text_note {
+	color: #999999;
+}
+
+.text_muted {
+	color: #999999;
+}
+
+.text_warning {
+	color: #c09853;
+}
+
+/* calculator error messages include the following 2 */
+.text_error {
+	color: #cc3333;
+}
+.calc_error {
+	max-width: 300px;
+	_width: 300px;
+	margin:8px 5px;
+}
+
+.text_info {
+  color: #3a87ad;
+}
+
+.text_success {
+  color: #468847;
+}
+.text_ianswer {
+	font-style:italic;
+	color:#333333;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0.67em 0em 0.67em 0.75em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 1.25em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+p {
+	margin-left:0.75em;
+	margin-right:0.5em;
+}
+img {
+	border:0;
+}
+img.formula {
+	margin-left:2em;
+}
+div.cite {
+	font-size:0.8em;
+	color:#666;
+}
+
+dl {
+	padding:6px;
+	background-color: #f0f0f0;
+	border: 1px solid #b3b3b3;
+	-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+			border-radius: 6px;
+	overflow:hidden;
+}
+dt {
+	font-style:italic;
+}
+dd {
+	color:#333;
+	background-color:inherit;
+}
+
+.wrapped0 {
+	margin:0;
+	padding:0;
+}
+.overflowHidden {
+	overflow:hidden;
+}
+
+/* set defaults of all tables captions and align text at top */ 
+caption {
+    font-weight: bold;
+	padding:4px;
+}
+td {
+	vertical-align:top;
+}
+
+
+/* yui grids */
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+/*.yui3-g {
+	letter-spacing:-0.31em;
+*letter-spacing:normal;
+	word-spacing:-0.43em
+}
+*/
+
+.yui3-u,
+.yui3-u-1,
+.yui3-u-1-2,
+.yui3-u-1-3,
+.yui3-u-2-3,
+.yui3-u-1-4,
+.yui3-u-3-4,
+.yui3-u-1-5,
+.yui3-u-2-5,
+.yui3-u-3-5,
+.yui3-u-4-5,
+.yui3-u-1-6,
+.yui3-u-5-6,
+.yui3-u-4-11,
+.yui3-u-5-11,
+.yui3-u-6-11,
+.yui3-u-7-11,
+.yui3-u-1-8,
+.yui3-u-3-8,
+.yui3-u-5-8,
+.yui3-u-7-8,
+.yui3-u-1-12,
+.yui3-u-5-12,
+.yui3-u-7-12,
+.yui3-u-11-12,
+.yui3-u-1-24,
+.yui3-u-5-24,
+.yui3-u-7-24,
+.yui3-u-11-24,
+.yui3-u-13-24,
+.yui3-u-17-24,
+.yui3-u-19-24,
+.yui3-u-23-24 {
+	display:inline-block;
+	zoom:1;
+*display:inline;
+	letter-spacing:normal;
+	word-spacing:normal;
+	vertical-align:top
+}
+
+.yui3-u-1 {
+	display:block
+}
+
+/* was 50 */
+.yui3-u-1-2 {
+	width:49%
+}
+
+/* was 33.3333 */
+.yui3-u-1-3 {
+	width:33%
+}
+/* was 66.6666 */
+.yui3-u-2-3 {
+	width:66%
+}
+
+.yui3-u-1-4 {
+	width:25%
+}
+
+.yui3-u-3-4 {
+	width:75%
+}
+
+.yui3-u-1-5 {
+	width:20%
+}
+
+.yui3-u-2-5 {
+	width:40%
+}
+
+.yui3-u-3-5 {
+	width:59%
+}
+/* was 80 */
+.yui3-u-4-5 {
+	width:78%
+}
+
+.yui3-u-1-6 {
+	width:16.656%
+}
+
+.yui3-u-5-6 {
+	width:83.33%
+}
+
+.yui3-u-1-8 {
+	width:12.5%
+}
+
+.yui3-u-3-8 {
+	width:37.5%
+}
+
+.yui3-u-5-8 {
+	width:62.5%
+}
+
+.yui3-u-7-8 {
+	width:87.5%
+}
+
+.yui3-u-1-12 {
+	width:8.3333%
+}
+
+.yui3-u-5-12 {
+	width:41.6666%
+}
+
+.yui3-u-7-12 {
+	width:58.3333%
+}
+
+.yui3-u-11-12 {
+	width:91.6666%
+}
+
+.yui3-u-1-24 {
+	width:4.1666%
+}
+
+.yui3-u-5-24 {
+	width:20.8333%
+}
+
+.yui3-u-7-24 {
+	width:29.1666%
+}
+
+.yui3-u-11-24 {
+	width:45.8333%
+}
+
+.yui3-u-13-24 {
+	width:54.1666%
+}
+
+.yui3-u-17-24 {
+	width:70.8333%
+}
+
+.yui3-u-19-24 {
+	width:79.1666%
+}
+
+.yui3-u-23-24 {
+	width:95.8333%
+}
+
+/* Add in 11ths with approximate widths at document level */
+.yui3-u-4-11 {
+}
+.yui3-u-5-11 {
+}
+.yui3-u-6-11 {
+	padding-bottom:10px;
+}
+.yui3-u-7-11 {
+}
+
+
+.width90 {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+
+/* wrap around viewable site */
+div#wrapper {
+	margin:2px auto;
+	padding:0px;
+	border:1px solid #b3b3b3;
+	background-color:#FFFFFF;
+	width:100%;
+}
+
+
+/*
+
+WEBSITE Header BEGIN
+
+*/
+
+
+/* page title header above navigation */
+#header {
+	padding:6px;
+	margin:0;
+}
+#headerLeft {
+}
+#headerRight {
+	
+	font-size:0.8em;
+}
+
+/* summation logo inside headerLeft */
+#calculatorlogo {
+	float:left;
+	margin-top:0px;
+}
+
+/* CalculatorSoup name inside website header */
+p#title {
+	margin:0px 2px 0px 2px;
+}
+p#title a {
+	text-decoration:none;
+}
+p#title span.topCalculator {
+	font-family:'Courier New', Courier, monospace;
+	font-size:1.75em;
+	color:#333333;
+	background-color:#ffffff;
+	font-weight:bold;
+}
+p#title span.topSoup {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:1.6em;
+	color:#bd362f;
+	background-color:#fffff;
+	font-weight:bold;
+	margin-left:-4px;
+}
+/* CalculatorSoup name as website header END */
+
+/* CalculatorSoup website tag line */
+p.tag {
+	color:#777777;
+	background-color:#ffffff;
+	font-weight:bold;
+	margin:0px 2px 2px 2px;
+}
+p.tag a {
+	color:#777777;
+	background-color:#ffffff;
+	text-decoration:none;
+}
+/* website tag line END */
+/*
+
+WEBSITE Header END 
+
+*/
+
+
+/* classes for CalculatorSoup name inline in a paragraph */
+.Tcalculatorsoup {
+	text-decoration:underline;
+}
+.Tcalculatorsoup .Tcalculator {
+	font-family:'Courier New', Courier, monospace;
+	font-size:1.2em;
+	color:#333333;
+	background-color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.Tcalculatorsoup .Tsoup {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:1.1em;
+	color:#bd362f;
+	background-color:#FFFFFF;
+	font-weight:bold;
+	margin-left:-4px;
+	text-decoration:underline;
+}
+/* classes for CalculatorSoup name inline in a paragraph END */
+
+/* CalculatorSoup Small Logo, say pop up footers */
+p#titleSmall {
+	margin:10px 4px 4px 4px;
+	font-size:80%;
+}
+p#titleSmall span.calculator {
+	font-family:'Courier New', Courier, monospace;
+	font-size:1.2em;
+	color:#333333;
+	background-color:#ffffff;
+	font-weight:bold;
+}
+p#titleSmall span.soup {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:1.1em;
+	color:#bd362f;
+	background-color:#ffffff;
+	font-weight:bold;
+	margin-left:-3px;
+}
+/* CalculatorSoup Small Logo, say pop up footers END */
+
+
+/*
+
+Top Navigation BEGIN
+
+*/
+#TopNav {
+	margin:0;
+	padding:0;
+	border-top: 1px solid #666;
+	border-bottom:1px solid #666;
+	background-color:#eee;
+}
+#TopNav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	width: 100%;
+	background-color:#eee;
+}
+#TopNav ul li {
+	display: inline;
+}
+#TopNav ul li a {
+	float: left;
+	padding: 6px 10px 4px 10px;
+	border-right:1px solid #999;
+	color:#666;
+}
+#TopNav ul li a:hover {
+	color: black;
+	background-color: #fff;
+	border-bottom: 4px solid black;
+	text-decoration:none;
+	padding-bottom: 0;
+}
+#TopNav ul li.current a {
+	color: black;
+	background-color: #fff;
+	border-bottom: 4px solid black;
+	text-decoration:none;
+	padding-bottom: 0;
+}
+#TopNav li#search {
+	float:right;
+	margin:0;
+	padding:0;
+	width:300px;
+}
+
+div#search {
+	float:right;
+	margin:0;
+	margin-top:4px;
+	padding:0;
+	width:300px;
+}
+
+/*
+
+Top Navigation END
+
+*/
+
+/*
+
+Main Content
+
+*/
+/* bordered between header navigation and footer includes calculator and text and right ad */
+#contentMain {
+	clear:both;
+	padding:6px;
+}
+.breadcrumbs_1st {
+	margin:5px 0px 10px 5px;
+	font-weight:normal;
+	background-color:#FFF;
+	color:#666;
+	font-size:0.85em;
+}
+
+#contentMain ol, #contentMain ul {
+	overflow:hidden;
+}
+div#contentMain h2:first-of-type {
+	margin-top:0;
+}
+
+/* Index Page List Menues */
+
+ul.index {
+	list-style:none outside none;
+	margin-top:0px;
+	margin-left:0px;
+	padding-left:20px;
+}
+ul.index li {
+	margin-bottom:9px;
+}
+ul.index ul {
+	list-style:none outside none;
+}
+ul.index ul li {
+	margin-bottom:9px;
+	margin-top:4px;
+}
+
+
+/*
+
+Calculator Styles
+Form Styles
+
+*/
+/* Form */
+form {
+	margin:0;
+	padding:0;
+}
+
+input {
+	text-align:right;
+}
+div#search input, div#search_on_page input {
+	text-align:left;
+}	
+input.normal_text {
+	text-align:left;
+}
+/* Calculator Form */
+/* multi calculator pages use 1,2,3, ect */
+form#CalculatorForm {
+}
+
+/* first form input for javascript focus */
+#first_input {
+}
+
+.WhiteAnswerCell {
+	background-color:#FFFFFF;
+	color:#000000;
+	padding:6px;
+	border:1px solid #666666;
+}
+
+textarea.get_link {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
+}
+
+/* Calculator Table Container Styles for Maroon and Grey Rounded Corners */
+caption.calculatorTitle {
+	padding:6px 4px 6px 4px;
+	color:#FFFFFF;
+	background-color:#bd362f;
+	-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+			border-radius: 6px;
+	margin-bottom:8px;
+/*
+font-size: 14px;
+line-height: 20px;
+*line-height: 20px;
+
+  
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #da4f49;
+background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+border-color: #bd362f #bd362f #802420;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+*background-color: #bd362f;
+/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+/*
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+*/
+}
+#calculator_red_grey {
+	margin:auto;
+	padding:3px;
+	background-color: #f0f0f0;
+	border: 1px solid #b3b3b3;
+	-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+			border-radius: 6px;
+			
+}
+#calculator_red_grey .WhiteAnswerCell {
+	border:1px solid #b3b3b3;
+	-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+			border-radius: 6px;
+}
+
+/* button CSS and caption CSS from http://twitter.github.io/bootstrap/ */
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 14px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  
+  *background-color: #b3b3b3;
+  *color:#000000;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  
+  cursor:pointer;
+
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25;
+}
+
+
+/* what-is-my-ip-address.php */
+.answerIP {
+	color:#990000;
+	background-color:#f0f0f0;
+	font-size:2.5em;
+	font-weight:bold;
+	font-family:"Times New Roman", Times, serif;
+}
+
+/* sharing buttons */
+div#shareThisDiv_h1 {
+	margin:0px 0px 0px 190px;
+}
+div#shareThisDiv_mob {
+	margin:10px 0px 10px 8px;
+}
+
+
+
+
+
+
+/* ok above this line */
+
+/* 
+includes calculator and text NOT right ad 
+*/
+#yuiWrapping {
+	padding:12px 0px 10px 5px;
+	margin-top:0;
+}
+
+
+p.tightindentDescription {
+	margin:-4px 0 10px 35px;
+	padding:0;
+	font-size:95%;
+	font-style:italic;
+	color:#333;
+}
+
+.importantCall {
+	color:#C00;
+	background-color:inherit;
+	font-weight:bold;
+	text-decoration:underline;
+	font-style:italic;
+}
+.equation {
+	font-weight:bold;
+	margin-top:6px;
+	margin-bottom:6px;
+}
+.equaitionInLine {
+	white-space:nowrap;
+	line-height:normal;
+}
+
+
+/*
+
+HOME page Folder Links
+
+*/
+.treeview ul, .treeview ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.treeview li.submenu {
+	list-style-image:url(../scripts/ddsimple/closed.gif);
+	border:0px solid #F00;
+	padding:2px;
+	margin:0;
+	margin-bottom: 3px;
+	margin-top:10px;
+}
+
+
+/*
+
+odds and ends 
+
+*/
+.overline {
+	text-decoration:overline;
+	text-height:text-size;
+}
+code {
+	font-family:monospace;
+	font-size:1.1em;
+}
+.pi {
+	font-family:serif;
+	font-style:italic;
+	font-size:125%;
+}
+.theta {
+	font-family:serif;
+	font-size:110%;
+}
+
+/* Images */
+img.rightFloat {
+	float:right;
+	margin:10px 0px 10px 10px;
+}
+.emphasis {
+	color:#C00;
+	background-color:inherit;
+	font-weight:bold;
+}
+.emphasisBig {
+	color:#C00;
+	background-color:inherit;
+	font-weight:bold;
+	font-style:italic;
+	font-size:1.2em;
+}
+.highlight {
+	background-color:#FF9;
+}
+.spacer_150 {
+	width:150px;
+}
+.spacer_200 {
+	width:200px;
+}
+.spacer_250 {
+	width:250px;
+}
+.spacer_300 {
+	width:300px;
+}
+.min_200 {
+	min-width:200px;
+}
+.min_225 {
+	min-width:225px;
+}
+.min_250 {
+	min-width:250px;
+}
+/*
+span.highlight {
+	display:none;
+}
+*/
+
+.note {
+	font-weight:normal;
+	font-size:0.8em;
+	font-style:italic;
+	color:#666;
+}
+.noteLG {
+	font-size:0.9em;
+}
+.noteLG, .noteLG a {
+	font-weight:normal;
+	font-style:italic;
+	color:#666;
+}
+.noteSmaller {
+	font-weight:normal;
+	font-size:0.7em;
+	font-style:italic;
+	color:#666;
+}
+
+
+.small {font-size:0.8em;}
+.reallytight { font-size:75%; margin:0; padding:0; }
+.tight { margin:0 0 4px 4px; padding:0; }
+.indent { margin-left:20px; }
+.tightindent { margin:0 0 8px 20px; padding:0; }
+.tightMid { margin:4px 0 6px 4px; padding:0; }
+
+.important { color:#f02025; background-color:inherit; font-weight:bold;}
+
+
+/*
+
+Main Blocks including AD Containers
+
+*/
+#ADleftBlock {
+	float:left;
+	width:164px;
+	margin:0px 20px 20px 0px;
+}
+#calculatorBlock {
+	float:left;
+	margin:0px 20px 20px 0px;
+}
+#ADright300 {
+	padding:0px 0px 0px 0px;
+	text-align:center;
+	background-color:#fff;
+}
+/* changing previous name over to this */
+#ADrightBlock {
+	padding:0px 0px 0px 0px;
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#fff;
+}
+#ADbottom728 {
+	clear:both;
+	margin:20px 0px 0px -15px;
+	padding:4px 0px 2px 0px;
+}
+/* changing previous name over to this */
+#ADbottomBlock {
+	clear:both;
+	text-align:center;
+	margin:20px 0px 0px 0px;
+	padding:4px 0px 2px 0px;
+}
+
+
+.AD970 {
+	clear:both;
+	text-align:center;
+	margin:0px 0px 0px -5px;
+	padding:4px 0px 2px 0px;
+	width:974px;
+	background-color:#fff;
+}
+#ADright160 {
+	clear:both;
+	margin-top:10px;
+}
+
+
+
+/* SPECIAL TABLES */
+
+/* lattice multiplication tables BEGIN */
+table#lattice td {
+	text-align:center;
+	vertical-align:middle;
+}
+
+table#lattice td {
+	border-collapse:collapse;
+}
+
+table#lattice td.borderBox {
+	border:1px solid #333;
+}
+
+/* lattice multipliers */
+.lm {
+	color:#00C;
+	background-color:#FFF;
+	font-weight:bold;
+}
+table#lattice td.lm {
+	padding:2px;
+	color:#00C;
+	background-color:#FFF;
+	font-weight:bold;
+}
+
+/* lattice products */
+.lp {
+	color:#C00;
+	background-color:#FFF;
+	font-weight:bold;
+}
+table#lattice td.lp {
+	padding:2px;
+	color:#C00;
+	background-color:#FFF;
+	font-weight:bold;
+}
+/* lattice multiplication tables END */
+
+
+
+/* Draft Picks Specific */
+td.round {
+	background-color:#999;
+	color:#000;
+	font-weight:bold;
+	border:1px solid #FFF;
+	text-align:center;
+}
+td.roundCol {
+	background-color:#CCC;
+	color:#000;
+	border:1px solid #FFF;
+	border-bottom:1px solid #000;
+	text-align:center;
+}
+td.pick {
+	font-weight:bold;
+	border-left:1px solid #000;
+	border-right:1px solid #CCC;
+	text-align:right;
+}
+th.chartth {
+	color:#FFF;
+	background-color:#000;
+	text-align:center;
+}
+td.trader {
+	border-right:1px solid #999;
+}
+
+
+
+
+/*
+modified wikitable/prettytable class for skinning normal tables 
+Depreciation Results Tables
+with dollar values right justified
+*/
+table.prettytable {
+	font-size: 0.9em;
+	margin-bottom:1em;
+	margin-top:1em;
+	background: #f9f9f9;
+	border: 1px #aaaaaa solid;
+	border-collapse: collapse;
+}
+table.prettytableCenter {
+	margin-left:auto;
+	margin-right:auto;
+}
+table.prettytable caption {
+	font-size: 1.1em;
+}
+ /* for table.prettytable tr.headerCell td see amortization */
+table.prettytable th, table.prettytable tr.headerCell td, table.prettytable td  {
+	border: 1px #aaaaaa solid;
+	padding: 0.4em;
+	text-align:right;
+}
+
+table.prettytable th, table.prettytable tr.headerCell td {
+	background: #d9d9d9;
+	text-align: center;
+	font-weight:bold;
+}
+/* for row headers */
+table.prettytable td.headerCell {
+	background: #d9d9d9;
+	text-align: right;
+	font-weight:bold;
+}
+
+table.prettytable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+table.wideCell th, table.wideCell td {
+	padding:2px 8px 2px 8px;
+}
+table.prettytable tr:hover {
+	background-color: #FFFFBB;
+	cursor:pointer;
+}
+
+/* simple */
+table.simpletable {
+	font-size: 0.9em;
+	margin-bottom:1em;
+	margin-top:1em;
+	background: #f9f9f9;
+	border: 1px #aaaaaa solid;
+	border-collapse: collapse;
+}
+table.simpletableCenter {
+	margin-left:auto;
+	margin-right:auto;
+}
+table.simpletable caption {
+	font-size: 1.1em;
+}
+ /* for table.simpletable tr.headerCell td see amortization */
+table.simpletable th, table.simpletable tr.headerCell td, table.simpletable td  {
+	border: 1px #aaaaaa solid;
+	padding: 0.4em;
+}
+
+table.simpletable th, table.simpletable tr.headerCell td {
+	background: #d9d9d9;
+	text-align: center;
+	font-weight:bold;
+}
+/* for row headers */
+table.simpletable td.headerCell {
+	background: #d9d9d9;
+	text-align: right;
+	font-weight:bold;
+}
+
+table.simpletable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+
+/* clean */
+table.cleantable {
+	margin-bottom:1em;
+	margin-top:1em;
+	background: #fff;
+	color:#333;
+	border: 1px #ccc solid;
+	border-collapse: collapse;
+}
+table.cleantableCenter {
+	margin-left:auto;
+	margin-right:auto;
+}
+table.cleantable caption {
+	font-size: 1.1em;
+}
+ /* for table.cleantable tr.headerCell td see amortization */
+table.cleantable th, table.cleantable tr.headerCell td, table.cleantable td  {
+	border: 1px #ccc solid;
+	padding: 0.4em;
+}
+
+table.cleantable th, table.cleantable tr.headerCell td {
+	background: #d9d9d9;
+	text-align: center;
+	font-weight:bold;
+}
+/* for row headers */
+table.cleantable td.headerCell {
+	background: #d9d9d9;
+	text-align: right;
+	font-weight:bold;
+}
+
+table.cleantable td.carry {
+	color: #CC0000;
+}
+table.cleantable td.border2top {
+	border-top:2px solid #000;
+}
+
+
+table.cleantable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+/*
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+*/
+table.common {
+	border-collapse:collapse;
+	margin:auto;
+}
+table.commonLeft {
+	border-collapse:collapse;
+	/* stays left by not centering it */
+}
+table.common td, table.commonLeft td {
+	padding:4px;
+}
+
+table.100 {
+	width:100%
+}
+
+table.350 {
+	width:350px;
+}
+td.px20 {
+	width:20px;
+}
+td.px25 {
+	width:25px;
+}
+
+/* contained insid common */
+table.plain {
+	border-collapse:collapse;
+	margin:auto;
+}
+table.plain th, table.plain td, table.plain tr {
+	border-collapse:collapse;
+	padding:0;
+}
+
+/*
+table.center {
+	margin:auto;
+}
+*/
+
+/***** Table Cell Borders *****/
+/* 1px solid lite grey */
+td.border1topLite {
+	border-top:1px solid #b3b3b3;
+}
+td.border1rightLite {
+	border-right:1px solid #b3b3b3;
+}
+td.border1bottomLite, tr.border1bottomLite {
+	border-bottom:1px solid #b3b3b3;
+}
+td.border1leftLite {
+	border-left:1px solid #b3b3b3;
+}
+
+/* 1px solid med grey */
+td.border1topMed {
+	border-top:1px solid #666666;
+}
+td.border1rightMed {
+	border-right:1px solid #666666;
+}
+td.border1bottomMed, tr.border1bottomMed {
+	border-bottom:1px solid #666666;
+}
+td.border1leftMed {
+	border-left:1px solid #666666;
+}
+
+/* 1px solid black */
+td.border1top {
+	border-top:1px solid #000;
+}
+td.border1right {
+	border-right:1px solid #000;
+}
+td.border1bottom {
+	border-bottom:1px solid #000;
+}
+td.border1left {
+	border-left:1px solid #000;
+}
+
+/* 2px solid black */
+td.border2top {
+	border-top:2px solid #000;
+}
+td.border2right {
+	border-right:2px solid #000;
+}
+td.border2bottom {
+	border-bottom:2px solid #000;
+}
+td.border2left {
+	border-left:2px solid #000;
+}
+
+.p10px {
+	padding:10px;
+}
+.p10pxSides {
+	padding:0px 10px 0px 10px;
+}
+
+
+/* geometry */
+td.geometricShapes {
+	padding:15px 0px 5px 20px;
+	border-bottom:1px solid #999;
+}
+
+
+/***** Footer cell styles *****/
+#footer {
+	font-size:0.8em;
+	text-align:center;
+	padding:10px;
+}
+#footer p {
+	padding:0;
+	margin:4px;
+}
+
+/* copyright statement */
+#copyright {
+	color:#999999;
+	text-align:center;
+	padding-top:4px;
+}
+
+#copyright a {
+	color:#999999;
+}
+
+#copyright a:hover {
+	color:#993333;
+}
+.monospace {
+	font-family:'Courier New', Courier, monospace;
+}
+.BigBold {
+	font-size:1.2em;
+	font-weight:bold;
+}
