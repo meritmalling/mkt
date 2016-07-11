@@ -201,7 +201,7 @@ body{
 }
 
 .s-sudokucircle {
-    background-color: #AFDFDD;
+    background-color: #AFDBCF;
     border-style: solid;
     border-width: 3px;
     border-color: black;
@@ -249,7 +249,7 @@ body{
 }
 
 .s-chasecircle {
-    background-color: #AFDFDD;
+    background-color: #AFDBCF;
     border-style: solid;
     border-width: 3px;
     border-color: black;
